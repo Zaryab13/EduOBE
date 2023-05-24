@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            ref="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+        <!-- bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!-- Box-Icons -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+
+    <body>
+
+        <div class="sidebar open">
+            <div class="logo-details">
+                <a href="index.html">
+                    <img src="../img/Logo 2.png" alt="">
+                    <span class="logo_name">edu obe</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <!-- <li>
+                    <div class="iocn-link">
+                        <a href="index.html">
+                            <img src="../icons/user.png" alt="">
+                             <i class="bi bi-person-gear"></i>
+                 <i class='bx bx-grid-alt'></i>
+                <span class="link_name">Admin</span>
+                </a>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="index.html">Admin</a></li>
+                </ul>
+        </div>
+        </li> -->
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <img src="../icons/user.png" alt="">
+                            <span class="link_name">Admin</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="ui-uni-info.html">Uni & Deptt <br> Management</a>
+                        </li>
+                        <li>
+                            <a href="ui-faculty-manage.html">Faculty Management</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <section class="home-section">
+            <div class="toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <nav class="top-nav" id="header">
+                <div class="nav-left">
+                    <div class="logos">
+                        <img src="../img/uom logo.png" alt="">
+                        <img src="../img/uom se logo.png" alt="">
+                    </div>
+                    <div class="top-link-items">
+                        <ul>
+                            <li>
+                                <a href="#">About</a>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                                <ul class="about-sub-menu top-sub-menu">
+                                    <li><a href="#">About Department</a></li>
+                                    <li><a href="#">About University</a></li>
+                                    <li><a href="#">About App</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="top-link-items">
+                        <ul>
+                            <li>
+                                <div class="icon-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff">
+                                        <path
+                                            d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                                    </svg>
+                                    <button type="button" class="notifdropBtn">
+                                        <i class="bx bxs-chevron-down arrow"></i>
+                                    </button>
+                                </div>
+                                <ul class="notif-sub-menu" id="notifSubMenu">
+                                    <div class="notif-header">
+                                        <div class="title">
+                                            <span>Notifications</span>
+                                        </div>
+                                        <div class="mrk-clr">
+                                            <span>Mark as read</span>
+                                            <span>Clear All</span>
+                                        </div>
+                                    </div>
+                                    <div class="notif-type">
+                                        <span>New</span>
+                                    </div>
+                                    <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">
+                                            Muhammad
+                                            Arsalan</a>
+                                        <div class="time-remain">
+                                            <img src="../icons/clock.svg" alt="">
+                                            <span>30 min</span>
+                                        </div>
+                                    </li>
+                                    <div class="notif-type">
+                                        <span>Earlier</span>
+                                    </div>
+                                    <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">Muhammad
+                                            Waqas</a>
+                                        <div class="time-remain">
+                                            <img src="../icons/clock.svg" alt="">
+                                            <span>30 min</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">Faraz
+                                            Khan</a>
+                                        <div class="time-remain">
+                                            <img src="../icons/clock.svg" alt="">
+                                            <span>30 min</span>
+                                        </div>
+                                    </li>
+                                    <div class="show-all-txt">
+                                        <span>Show All</span>
+                                    </div>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="icon-arrow">
+                                    <a id="user-name-link" href="#">
+                                        Muhammad Arsalan
+                                    </a>
+                                    <button type="button" class="profdropBtn">
+                                        <i class="bx bxs-chevron-down arrow"></i>
+                                    </button>
+                                </div>
+                                <ul class="prof-sub-menu" id="profileSubMenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="icons/profile.svg" alt="">
+                                            <span class="user-name-text">
+                                                Muhammad Arsalan
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="icons/add-user.svg" alt="">
+                                            <span>
+                                                Edit Profile
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="icons/key.svg" alt="">
+                                            <span>
+                                                Reset Password
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="icons/logout.svg" alt="">
+                                            <span>
+                                                Log Out
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Home Content -->
+            <div class="main container-fluid">
+                <h3 class="ms-3 my-4">Dashboard</h3>
+                <div class="bread-crumbs d-flex">
+                    <div aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item mx-3">
+                                <a href="#"><img src="../icons/home.svg" alt=""></a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <section>
+
+                    <div class="prof-info">
+                        <div class="row">
+                            <div class="col-lg-7 prof-card">
+                                <div class="row">
+                                    <div class="row position-relative">
+                                        <div class="underline"></div>
+                                        <div class="col-lg-3 m-4">
+                                            <img src="../icons/profile.svg" alt="">
+                                        </div>
+                                        <div
+                                            class="col-lg-7 d-flex flex-column align-items-left justify-content-center">
+                                            <span class="username">Muhammad Arsalan</span>
+                                            <span class="session">Session: 2019-2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="row prof-body">
+                                        <div class="col-lg-8">
+                                            <div class="info d-flex">
+                                                <div class="col-lg-5">
+                                                    <p>Father Name:</p>
+                                                    <p>CNIC:</p>
+                                                    <p>EMPLOYEE ID:</p>
+                                                    <p>DEPTT NAME:</p>
+                                                    <p>UNIVERISTY NAME #:</p>
+                                                    <p>BLOOD GROUP:</p>
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <p>Muhammad Arsalan</p>
+                                                    <p>15602-15121322-6</p>
+                                                    <p>77811</p>
+                                                    <p>Software Engineering</p>
+                                                    <p>UOM</p>
+                                                    <p>B<sup>+</sup></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 contact-info prof-card">
+                                <div class="col-g-12 contact-head d-flex align-items-center">
+                                    <img src="../icons/contact-book.svg" alt="">
+                                    <h3>Contact Information</h3>
+                                </div>
+                                <div class="col-g-12 my-4 contact-numbers ms-4">
+                                    <div class="row">
+                                        <div class="col-lg-5 d-flex flex-column justify-content-around">
+                                            <div class="d-flex mb-3">
+                                                <img src="../icons/calling.svg" alt="">
+                                                <span>Primary:</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="../icons/calling.svg" alt="">
+                                                <span>Secondary:</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 d-flex align-items-center flex-column">
+                                            <p class="mb-3">0348-9451519</p>
+                                            <p>0348-9451519</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-g-12 my-4 contact-email ms-4">
+                                    <div class="row d-flex flex-column position-relative">
+                                        <div class="col-lg-5 d-flex flex-column">
+                                            <div class="d-flex mb-3">
+                                                <img src="../icons/email.svg" alt="">
+                                                <span>Primary:</span>
+                                            </div>
+                                            <p>Muhammadarsalan@gmail.com</p>
+                                        </div>
+                                        <div class="email-underline col-lg-5 d-flex flex-column">
+                                            <div class="d-flex mb-3">
+                                                <img src="../icons/email.svg" alt="">
+                                                <span>Secondary:</span>
+                                            </div>
+                                            <p>Muhammadarsalan.se.uom@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-g-12 contact-add ms-4">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <img src="../icons/location.svg" alt="">
+                                            <span>Address: Bathkhela</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </section>
+
+                <section>
+
+                    <div class="row info-container d-flex justify-content-center">
+                        <div class="col-lg-12 inner-card ">
+                            <h3 class="section-heading">Department Information</h3>
+                            <div class="row d-flex justify-content-center">
+                                <div class="card-container col-lg-3 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Students</h6>
+                                                    <h3>50055</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-01.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-container col-lg-3 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Awards</h6>
+                                                    <h3>50+</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-02.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="card-container col-xl-3 col-md-6 col-sm-6 col-12 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Department</h6>
+                                                    <h3>30+</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-03.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-container col-xl-3 col-md-6 col-sm-6 col-12 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Revenue</h6>
+                                                    <h3>$505</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-04.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row info-container">
+                        <div class="col-lg-12 inner-card">
+                            <h5 class="sub-heading">Currently Enrolled Batches</h5>
+
+                            <div class="enrolled-table">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Batch</th>
+                                            <th scope="col">No of Students</th>
+                                            <th scope="col">Starting Date</th>
+                                            <th scope="col">Ending Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">2020-24</th>
+                                            <td>Maaz</td>
+                                            <td>2020</td>
+                                            <td>2024</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row info-container d-flex justify-content-center">
+                        <div class="col-lg-12 inner-card ">
+                            <h3 class="section-heading">Teachers Information</h3>
+                            <div class="row d-flex justify-content-center">
+                                <div class="card-container col-lg-3 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Current Courses</h6>
+                                                    <h3>3</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-01.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-container col-lg-3 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Awards</h6>
+                                                    <h3>50+</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-02.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="card-container col-xl-3 col-md-6 col-sm-6 col-12 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Department</h6>
+                                                    <h3>30+</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-03.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-container col-xl-3 col-md-6 col-sm-6 col-12 d-flex">
+                                    <div class="card bg-comman w-100">
+                                        <div class="card-body">
+                                            <div class="db-widgets d-flex justify-content-between align-items-center">
+                                                <div class="db-info">
+                                                    <h6>Revenue</h6>
+                                                    <h3>$505</h3>
+                                                </div>
+                                                <div class="db-icon">
+                                                    <img src="../icons/dash-icon-04.svg" alt="Dashboard Icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row info-container">
+                        <div class="col-lg-12 inner-card">
+                            <h5 class="sub-heading">Currently Teaching Courses</h5>
+
+                            <div class="enrolled-table">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Course ID</th>
+                                            <th scope="col">Course Name</th>
+                                            <th scope="col">Deptt Name</th>
+                                            <th scope="col">Batch No</th>
+                                            <th scope="col">Generate Report</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">2020-24</th>
+                                            <td>Maaz</td>
+                                            <td>2020</td>
+                                            <td>2024</td>
+                                            <td>
+                                                <button class="gen-reportBtn" type="button">
+                                                    <span class="button__text">Download</span>
+                                                    <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 35 35"
+                                                            id="bdd05811-e15d-428c-bb53-8661459f9307"
+                                                            data-name="Layer 2" class="svg">
+                                                            <path
+                                                                d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                                                            </path>
+                                                            <path
+                                                                d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                                                            </path>
+                                                            <path
+                                                                d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                                                            </path>
+                                                        </svg></span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                            <td>
+                                                <button class="gen-reportBtn" type="button">
+                                                    <span class="button__text">Download</span>
+                                                    <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 35 35"
+                                                            id="bdd05811-e15d-428c-bb53-8661459f9307"
+                                                            data-name="Layer 2" class="svg">
+                                                            <path
+                                                                d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                                                            </path>
+                                                            <path
+                                                                d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                                                            </path>
+                                                            <path
+                                                                d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                                                            </path>
+                                                        </svg></span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>
+                                                <button class="gen-reportBtn" type="button">
+                                                    <span class="button__text">Download</span>
+                                                    <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 35 35"
+                                                            id="bdd05811-e15d-428c-bb53-8661459f9307"
+                                                            data-name="Layer 2" class="svg">
+                                                            <path
+                                                                d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                                                            </path>
+                                                            <path
+                                                                d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                                                            </path>
+                                                            <path
+                                                                d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                                                            </path>
+                                                        </svg></span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </div>
+        </section>
+
+        <script src="../js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>

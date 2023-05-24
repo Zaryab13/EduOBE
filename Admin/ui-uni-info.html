@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            ref="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+        <!-- bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!-- Box-Icons -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+
+    <body>
+
+        <div class="sidebar open">
+            <div class="logo-details">
+                <a href="index.html">
+                    <img src="../img/Logo 2.png" alt="">
+                    <span class="logo_name">edu obe</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <!-- <li>
+                    <div class="iocn-link">
+                        <a href="index.html">
+                            <img src="../icons/user.png" alt="">
+                             <i class="bi bi-person-gear"></i>
+                 <i class='bx bx-grid-alt'></i>
+                <span class="link_name">Admin</span>
+                </a>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="index.html">Admin</a></li>
+                </ul>
+        </div>
+        </li> -->
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <img src="../icons/user.png" alt="">
+                            <span class="link_name">Admin</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="ui-uni-info.html">Uni & Deptt <br> Management</a>
+                        </li>
+                        <li>
+                            <a href="ui-faculty-manage.html">Faculty Management</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <section class="home-section">
+            <div class="toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <nav class="top-nav" id="header">
+                <div class="nav-left">
+                    <div class="logos">
+                        <img src="../img/uom logo.png" alt="">
+                        <img src="../img/uom se logo.png" alt="">
+                    </div>
+                    <div class="top-link-items">
+                        <ul>
+                            <li>
+                                <a href="#">About</a>
+                                <i class="bx bxs-chevron-down arrow"></i>
+                                <ul class="about-sub-menu top-sub-menu">
+                                    <li><a href="#">About Department</a></li>
+                                    <li><a href="#">About University</a></li>
+                                    <li><a href="#">About App</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="top-link-items">
+                        <ul>
+                            <li>
+                                <div class="icon-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff">
+                                        <path
+                                            d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                                    </svg>
+                                    <button type="button" class="notifdropBtn">
+                                        <i class="bx bxs-chevron-down arrow"></i>
+                                    </button>
+                                </div>
+                                <ul class="notif-sub-menu" id="notifSubMenu">
+                                    <div class="notif-header">
+                                        <div class="title">
+                                            <span>Notifications</span>
+                                        </div>
+                                        <div class="mrk-clr">
+                                            <span>Mark as read</span>
+                                            <span>Clear All</span>
+                                        </div>
+                                    </div>
+                                    <div class="notif-type">
+                                        <span>New</span>
+                                    </div>
+                                    <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">
+                                            Muhammad
+                                            Arsalan</a>
+                                        <div class="time-remain">
+                                            <img src="../icons/clock.svg" alt="">
+                                            <span>30 min</span>
+                                        </div>
+                                    </li>
+                                    <div class="notif-type">
+                                        <span>Earlier</span>
+                                    </div>
+                                    <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">Muhammad
+                                            Waqas</a>
+                                        <div class="time-remain">
+                                            <img src="../icons/clock.svg" alt="">
+                                            <span>30 min</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">Faraz
+                                            Khan</a>
+                                        <div class="time-remain">
+                                            <img src="../icons/clock.svg" alt="">
+                                            <span>30 min</span>
+                                        </div>
+                                    </li>
+                                    <div class="show-all-txt">
+                                        <span>Show All</span>
+                                    </div>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="icon-arrow">
+                                    <a id="user-name-link" href="#">
+                                        Muhammad Arsalan
+                                    </a>
+                                    <button type="button" class="profdropBtn">
+                                        <i class="bx bxs-chevron-down arrow"></i>
+                                    </button>
+                                </div>
+                                <ul class="prof-sub-menu" id="profileSubMenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="../icons/profile.svg" alt="">
+                                            <span class="user-name-text">
+                                                Muhammad Arsalan
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../icons/add-user.svg" alt="">
+                                            <span>
+                                                Edit Profile
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../icons/key.svg" alt="">
+                                            <span>
+                                                Reset Password
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../icons/logout.svg" alt="">
+                                            <span>
+                                                Log Out
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Home Content -->
+            <div class="main container-fluid">
+                <h3 class="ms-3 my-4">Dashboard</h3>
+                <div class="bread-crumbs d-flex">
+                    <div aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item mx-3">
+                                <a href="#"><img src="../icons/home.svg" alt=""></a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <section class="uni-info container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="section-heading">University Information</h2>
+                        </div>
+
+                        <div class="row university-info justify-content-center">
+                            <div class="editbtn-container">
+                                <button class="editbtnUniInfo">
+                                    <img src="../icons/edit.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-lg-6 card profile-card me-4">
+                                <img src="../icons/profile.svg" alt="profile-image" class="profile-image" />
+                                <div class="card-content">
+                                    <h2>University Of Malakand<small>UOM</small></h2>
+                                    <div class="other-info d-flex flex-column">
+                                        <div class="user-type">
+                                            <span>Type:</span>
+                                            <span>Public</span>
+                                        </div>
+                                        <div class="issue-authority">
+                                            <span>Issue Authority:</span>
+                                            <span>Government</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 contact-card d-flex justify-content-center flex-column">
+                                <div class="phone-content">
+                                    <img src="../icons/calling.svg" alt="">
+                                    <p>0946-123456</p>
+                                </div>
+                                <div class="website-content d-flex">
+                                    <img src="../icons/website.png" alt="">
+                                    <p>UOM@edu.com.pk</p>
+                                </div>
+                                <div class="additional-info">
+                                    <div class="col-lg-12 d-flex justify-content-between">
+                                        <p class="me-4 fw-bold">Country</p>
+                                        <span>Pakistan</span>
+                                    </div>
+                                    <div class="col-lg-12 d-flex justify-content-between">
+                                        <p class="me-4 fw-bold">City</p>
+                                        <span>Karachi</span>
+                                    </div>
+                                    <div class="col-lg-12 d-flex justify-content-between">
+                                        <p class="me-4 fw-bold">Address</p>
+                                        <span>korangi No 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="editProfModalContainer">
+                                <div class="dark-overlay"></div>
+                                <div class="edit-uni-info-modal" id="editUniInfoModal">
+                                    <div class="crossBtn" id="editUniInfoCloseBtn">
+                                        <img src="../icons/close-circle-outline.svg" alt="">
+                                    </div>
+                                    <form class="editform">
+                                        <div class="row">
+                                            <label class="col-lg-6 mb-4">
+                                                <input required="" placeholder="Name" type="text" class="editformInput">
+                                                <!-- <span class="ps-2">Name</span> -->
+                                            </label>
+
+                                            <label class="col-lg-6 mb-4">
+                                                <input required="" placeholder="Short Name" type="text"
+                                                    class="editformInput">
+                                                <!-- <span class="ps-2">Short Name</span> -->
+                                            </label>
+
+                                            <!-- <label class="col-lg-6 mb-4">
+                                                <input required="" placeholder="Type" type="text" class="editformInput">
+                                                <span>Type</span>
+                                            </label> -->
+                                            <label for="" class="col-lg-6 mb-4">
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>Type</option>
+                                                    <option value="public">Public</option>
+                                                    <option value="private">Private</option>
+                                                </select>
+                                            </label>
+                                            <label class="col-lg-6 mb-4">
+                                                <input required="" placeholder="Address" type="text"
+                                                    class="editformInput">
+                                                <!-- <span>Address</span> -->
+                                            </label>
+                                            <!-- <label>
+                                            <input required="" placeholder="" type="text" class="editformInput">
+                                            <span>issueing Authority</span>
+                                        </label> -->
+                                            <label for="" class="col-lg-6 mb-4">
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>City</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                    <option value="4">Four</option>
+                                                    <option value="5">Five</option>
+                                                    <option value="6">Six</option>
+                                                    <option value="7">Seven</option>
+                                                    <option value="8">Eight</option>
+                                                    <option value="9">Nine</option>
+                                                </select>
+                                            </label>
+                                            <label for="" class="col-lg-6 mb-4">
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>Country</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                    <option value="4">Four</option>
+                                                    <option value="5">Five</option>
+                                                    <option value="6">Six</option>
+                                                    <option value="7">Seven</option>
+                                                    <option value="8">Eight</option>
+                                                    <option value="9">Nine</option>
+                                                </select>
+                                            </label>
+                                            <label for="" class="col-lg-12 mb-4">
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>Issuing Authority</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                    <option value="4">Four</option>
+                                                    <option value="5">Five</option>
+                                                    <option value="6">Six</option>
+                                                    <option value="7">Seven</option>
+                                                    <option value="8">Eight</option>
+                                                    <option value="9">Nine</option>
+                                                </select>
+                                            </label>
+                                            <label class="col-lg-6 mb-4">
+                                                <input required="Phone Number" type="tel" placeholder="Phone Number"
+                                                    class="editformInput">
+                                                <!-- <span>Phone Number</span> -->
+                                            </label>
+                                            <label class="col-lg-6 mb-4">
+                                                <input required="" type="tel" placeholder="Website URL"
+                                                    class="editformInput">
+                                                <!-- <span>Website URL</span> -->
+                                            </label>
+                                            <label class="col-lg-6 mb-4">
+                                                <span class="logo-text">Logo</span>
+                                                <input required="" type="file" class="editformInput">
+                                            </label>
+                                        </div>
+                                        <button class="fancy" id="editModalSaveBtn" href="#">
+                                            <span class="top-key"></span>
+                                            <span class="text">Save</span>
+                                            <span class="bottom-key-1"></span>
+                                            <span class="bottom-key-2"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row deptt-info justify-content-center">
+                            <div class="col-12">
+                                <h2 class="section-heading">Department Information</h2>
+                            </div>
+                            <div class="editbtn-container">
+                                <button class="editbtnDeptInfo">
+                                    <img src="../icons/edit.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="col-lg-9 card Uni-card me-4">
+                                <img src="../icons/profile.svg" alt="profile-image" class="profile-image" />
+                                <div class="card-content">
+                                    <h2>Software Engineering<small>SE</small></h2>
+                                    <div class="other-info d-flex flex-column">
+                                        <div class="user-type">
+                                            <p>Vision</p>
+                                            <p>Mission</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="editDeptModalContainer">
+                                <div class="dark-overlay"></div>
+                                <div class="edit-dept-info-modal" id="editDeptInfoModal">
+                                    <div class="crossBtn" id="editDeptInfoCloseBtn">
+                                        <img src="../icons/close-circle-outline.svg" alt="">
+                                    </div>
+                                    <form class="editform">
+                                        <div class="row">
+                                            <label class="col-lg-6 mb-4">
+                                                <input required="" placeholder="Name" type="text" class="editformInput">
+                                            </label>
+
+                                            <label class="col-lg-6 mb-4">
+                                                <input required="" placeholder="Short Name" type="text"
+                                                    class="editformInput">
+                                            </label>
+                                            <label class="col-lg-6 mb-4">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                                    <label for="floatingTextarea2">Vision</label>
+                                                </div>
+                                            </label>
+                                            <label class="col-lg-6 mb-4">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                                    <label for="floatingTextarea2">Mission</label>
+                                                </div>
+                                            </label>
+                                            <label class="col-lg-6 mb-4">
+                                                <span class="logo-text">Logo</span>
+                                                <input required="" type="file" class="editformInput">
+                                            </label>
+                                        </div>
+                                        <button class="fancy" id="deptModalSaveBtn" href="#">
+                                            <span class="top-key"></span>
+                                            <span class="text">Save</span>
+                                            <span class="bottom-key-1"></span>
+                                            <span class="bottom-key-2"></span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+            </div>
+        </section>
+
+
+        </div>
+        </section>
+
+        <script src="../js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>

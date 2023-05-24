@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Box-Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body class="preload">
+
+    <div class="sidebar open">
+        <div class="logo-details">
+            <img src="img/Logo 2.png" alt="">
+            <span class="logo_name">edu obe</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="index.html">Dashboard</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="top-nav" id="header">
+            <div class="nav-left">
+                <div class="top-link-items">
+                    <ul>
+                        <li>
+                            <a href="#">About App </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="top-link-items">
+                    <ul>
+                        <li>
+                            <a id="user-name-link" href="#">
+                                Muhammad Arsalan
+                            </a>
+                            <button type="button" class="profdropBtn">
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </button>
+                            <ul class="prof-sub-menu" id="profileSubMenu">
+                                <li>
+                                    <a href="#">
+                                        <img src="icons/profile.svg" alt="">
+                                        <span class="user-name-text">
+                                            Muhammad Arsalan
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="icons/add-user.svg" alt="">
+                                        <span>
+                                            Edit Profile
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="icons/key.svg" alt="">
+                                        <span>
+                                            Reset Password
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="icons/logout.svg" alt="">
+                                        <span>
+                                            Log Out
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Content -->
+        <div class="main container-fluid">
+            <h3 class="ms-3 my-4">Dashboard</h3>
+            <div class="bread-crumbs d-flex">
+                <div aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item mx-3">
+                            <a href="main.html"><img src="icons/home.svg" alt=""></a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 admin-container">
+                        <h3>Admin Management</h3>
+                        <div class="ad-info">
+                            <div class="t-entries">
+                                <span>Total No of Entries</span>
+                                <span class="total-departments"></span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">University Name</th>
+                                        <th scope="col">Department Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Reg. Date</th>
+                                        <th scope="col">Licience Expiry</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="added-departments">
+                                </tbody>
+                            </table>
+                            <div class="row add-user">
+                                <div class="ad-user col-lg-12">
+                                    <img id="addUserBtn" src="icons/plus-circle.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="modalsContainer" id="modalContainer">
+                                <div class="dark-overlay"></div>
+                                <div class="add-user-popUp" id="popUp">
+                                    <form action="#" id="inputForm" name="popUp-form">
+                                        <div class="row personal-info">
+                                            <h3 class="popup-title">Register</h3>
+                                            <div class="close-icon" id="closeIcon">
+                                                <img src="icons/close-circle-outline.svg" alt="">
+                                            </div>
+                                            <h4 class="col-lf-12 info-title">Personal Information</h4>
+                                            <div class="col-lg-6 d-flex flex-column mt-4">
+                                                <span>University Name</span>
+                                                <input type="text" name="UniversityName" id="university-name-input">
+                                            </div>
+                                            <div class="col-lg-6 d-flex flex-column mt-4">
+                                                <span>Department Name</span>
+                                                <input type="text" name="DepttName" id="dept-name-input">
+                                            </div>
+                                            <div class="col-lg-6 d-flex flex-column mt-4">
+                                                <span>Email</span>
+                                                <input type="email" name="Email" id="email-input">
+                                            </div>
+                                            <div class="col-lg-6 d-flex flex-column mt-4">
+                                                <span>Username</span>
+                                                <input type="text" name="Username" id="username-input">
+                                            </div>
+                                            <div class="col-lg-6 d-flex mt-4">
+                                                <span>Years of Licensing</span>
+                                                <div class="select">
+                                                    <select>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="row d-flex justify-content-center buttons">
+                                            <button class="cancelPopUp col-lg-6" id="cancelPopUpBtn">Cancel</button>
+                                            <button id="AddSavePopupBtn" class="addUserTo col-lg-6">Add</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="deleteUserPopUp" id="deleteUserPopUp">
+                                    <div class="content">
+                                        <h3>Remove User</h3>
+                                        <p>Are You Sure You Want to Delete this User?</p>
+                                        <div class="deletePopupButtons">
+                                            <button class="cancel" id="deleteCancelBtn">Cancel</button>
+                                            <button class="delete">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- License Management -->
+
+        <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 admin-container">
+                    <h3>License Management</h3>
+                    <div class="ad-info">
+                        <div class="t-entries">
+                            <span>Total No of Entries</span>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: #9ea0a5;">
+                                <path
+                                    d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="table-head col-lg-6 col-md-12">
+                            <div class="col-lg-3">
+                                <p>FIRST NAME</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>LAST NAME</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>FROM</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>TO</p>
+                            </div>
+                        </div>
+                        <div class="table-body">
+                            <div class="row user-container">
+                                <div class="left col-lg-6 col-md-12">
+                                    <div class="col-lg-3">
+                                        <p>Maaz</p>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <p>Ghani</p>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <p>19-Jan-2021</p>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <p>16-July-2023</p>
+                                    </div>
+                                </div>
+                                <div class="right col-lg-5">
+                                    <div class="user-action col-lg-6">
+                                        <button id="editIcon" class="noselect">
+                                            <span class="text">Update</span>
+                                            <span class="icon">
+                                                <img src="icons/edit.svg" alt="">
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="user-action col-lg-6">
+                                        <button id="deleteIcon" class="noselect">
+                                            <span class="text">Delete</span>
+                                            <span class="icon">
+                                                <img src="icons/trash.svg" alt="">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row add-user">
+                                <div class="ad-user col-lg-12">
+                                    <img id="addUserBtn" src="icons/plus-circle.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="add-user-popUp" id="popUp">
+                                <div class="dark-overlay"></div>
+                                <form action="#" id="inputForm" name="popUp-form">
+                                    <div class="row personal-info">
+                                        <h3 class="popup-title">Register</h3>
+                                        <div class="close-icon" id="closeIcon">
+                                            <img src="icons/close-circle-outline.svg" alt="">
+                                        </div>
+                                        <h4 class="col-lf-12 info-title">Personal Information</h4>
+                                        <div class="col-lg-6 d-flex flex-column mt-4">
+                                            <span>Full Name</span>
+                                            <input type="text" name="fullName">
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column mt-4">
+                                            <span>Employee Id</span>
+                                            <input type="text" name="employeeId">
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column mt-4">
+                                            <span>Department</span>
+                                            <input type="text" name="Department">
+                                        </div>
+                                    </div>
+                                    <div class="row role-and-credentials">
+                                        <h4 class="info-title">Positon in Department</h4>
+                                        <div class="col-lg-6 d-flex flex-column mt-4">
+                                            <span>Positon</span>
+                                            <input type="text" name="position">
+                                        </div>
+                                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                                            <textarea name="responsibilities" placeholder="Responsibilities"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row abt-sys">
+                                        <h4 class="col-lg-12 info-title">Knowledge about the System</h4>
+                                        <div>
+                                            <span class="col-lg-12">Do you any prior Knowledge About an OBE based
+                                                Education
+                                                System</span>
+                                            <div class="col-lg-6 d-flex justify-content-around radio-btns">
+                                                <div>
+                                                    <input type="radio" id="yes" name="familiarity" value="yes">
+                                                    <label for="yes">Yes</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="no" name="familiarity" value="no">
+                                                    <label for="no">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="endorse">
+                                        <h4 class="info-title">Head Endorsement</h4>
+                                        <div>
+                                            <input type="text" name="endorsement">
+                                        </div>
+                                    </div>
+
+                                    <div class="row d-flex justify-content-center buttons">
+                                        <button class="cancelPopUp col-lg-6" id="cancelPopUp">Cancel</button>
+                                        <button class="addUserTo col-lg-6">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="deleteUserPopUp" id="deleteUserPopUp">
+                                <div class="content">
+                                    <h3>Remove User</h3>
+                                    <p>Are You Sure You Want to Delete this User?</p>
+                                    <div class="deletePopupButtons">
+                                        <button class="cancel" id="deleteCancelBtn">Cancel</button>
+                                        <button class="delete">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+    </section>
+
+
+    <script src="js/index.js"></script>
+
+    <script src="js/scrips.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
