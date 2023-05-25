@@ -241,6 +241,7 @@ function closeEditDeptInfoModal(){
   editDeptContainerEl.style.display = "none";
 }
 
+
 // Delete Faculty User Modal
 
 

@@ -1146,8 +1146,14 @@ nav {
 /* icons Button with every row in the list of Departments */
 
 /* Css of the Table Buttons / Row */
-.table-row {
+
+.table-row > td {
   padding: 1rem 0;
+  vertical-align: middle;
+  text-align: left;
+}
+.table-row > td:last-child {
+  margin-right: 10px;
 }
 .icon-button {
   border: none;
@@ -1762,4 +1768,28 @@ nav {
 
 .dltFacultyModal .delete:hover {
   background-color: #ff3636;
+}
+
+/* PEO Section in PEO/PLO Manage Page Start */
+
+.PEO-section .title {
+  text-align: center;
+  font-size: 30px;
+}
+.PEO-section .csvBtn {
+  background-color: #67d3f5;
+  float: right;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+.PEO-section .csvBtn:hover {
+  background-color: #44adce;
+  transform: scale(1.1);
+}
+
+.addPEOModal {
+  width: 50%;
 }
