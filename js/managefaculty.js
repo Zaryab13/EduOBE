@@ -22,7 +22,6 @@ const facultyData = [
 
 
 
-// document.addEventListener('DOMContentLoaded', () => {
     const cardsList = document.querySelector('.faculty-cards');
     let card = document.createElement('div');
     card.classList.add('col-12','col-sm-6','col-md-4', 'col-lg-3');
@@ -45,4 +44,3 @@ const facultyData = [
 `;
    
 cardsList.appendChild(card);
-// });

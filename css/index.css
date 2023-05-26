@@ -1374,6 +1374,7 @@ nav {
   animation: FadeIn 0.5s linear;
   z-index: 100;
 }
+
 .crossBtn {
   width: 100%;
   text-align: right;
@@ -1772,11 +1773,16 @@ nav {
 
 /* PEO Section in PEO/PLO Manage Page Start */
 
-.PEO-section .title {
+.PEO-section .title,
+.PLO-section .title,
+.BOS-section .title {
   text-align: center;
   font-size: 30px;
+  margin-top: 4rem;
 }
-.PEO-section .csvBtn {
+.PEO-section .csvBtn,
+.PLO-section .csvBtn,
+.BOS-section .csvBtn {
   background-color: #67d3f5;
   float: right;
   padding: 8px 20px;
@@ -1785,11 +1791,9 @@ nav {
   outline: none;
   transition: all 0.5s ease;
 }
-.PEO-section .csvBtn:hover {
+.PEO-section .csvBtn:hover,
+.PLO-section .csvBtn:hover,
+.BOS-section .csvBtn:hover {
   background-color: #44adce;
   transform: scale(1.1);
-}
-
-.addPEOModal {
-  width: 50%;
 }
