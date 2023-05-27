@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const table = document.getElementById('addPLOs'); // Get reference to the table element
+    const table = document.getElementById('addStudentList'); // Get reference to the table element
     const data = [
       // Array of objects with the data
       {
@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '1',
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'kakakhan@uet.edu.pk',
         username: 'kakakhan12@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '2',
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '3',
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '4',
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '5',
@@ -48,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
     ];
   
@@ -74,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
           cell.appendChild(text); // Append the text node to the cell
         });
   
+          
       // Create a cell for the additional HTML data on the right side
       const additionalDataCell = row.insertCell(); 
       // Create a new cell
@@ -83,8 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Create a container for the buttons
       const buttonContainer = document.createElement('div');
       buttonContainer.className =
-        'd-flex align-items-center justify-content-sm-evenly';
-  
+        'd-flex align-items-center justify-content-sm-evenly';        
+
+
       // Create the Edit button
       const editButton = document.createElement('button');
       editButton.classList.add('icon-button', 'edit-button');
@@ -172,8 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
     userNameTextElement[0].textContent = 'Admin';
   
     //Number of Total Departments
-    const numberOfTotalDepartments =
-      document.getElementsByClassName('total-departments');
-    numberOfTotalDepartments[0].textContent = data.length;
+    // const numberOfTotalDepartments =
+    //   document.getElementsByClassName('total-departments');
+    // numberOfTotalDepartments[0].textContent = data.length;
   });
   

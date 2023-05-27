@@ -421,7 +421,7 @@ nav {
 }
 .top-nav {
   position: sticky;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1712,8 +1712,7 @@ nav {
 
 /* Add User Card Faculty Management */
 .add-user-card {
-  height: 100%;
-  max-height: 317px;
+  height: 317px;
   transition: background-color 0.5s ease;
   cursor: pointer;
 }
@@ -1821,3 +1820,45 @@ nav {
 }
 
 /* End */
+
+/* Start Batch Cards of =Student Batch List
+ */
+.batch-cards {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.batch-cards a {
+  text-decoration: none;
+  color: #000;
+}
+.batch-card {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.batch-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.batch-card h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.batch-card p {
+  font-size: 20px;
+}
+.no-students {
+  padding: 1rem;
+}
+
+.no-students span {
+  font-size: 60px;
+  font-weight: 900;
+}

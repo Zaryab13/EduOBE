@@ -125,11 +125,11 @@
 
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <h3 class="section-heading">Board Of Study Management</h3>
+                    <h3 class="section-heading">Student Management</h3>
 
                     <div class="BOS-section row">
                         <div class="section-head">
-                            <h4 class="title">BOS List</h4>
+                            <h4 class="title">Students List</h4>
                             <button class="csvBtn">Import CSV</button>
                         </div>
                         <div class="row BOS-table">
@@ -137,28 +137,27 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Code</th>
+                                        <th scope="col">RegNo</th>
                                         <th scope="col">Name</th>
-                                        <th scope="col">Career</th>
-                                        <th scope="col">Scheme Type</th>
-                                        <th scope="col">OBE Enabled</th>
+                                        <th scope="col">Program Batch</th>
+                                        <th scope="col">Semester</th>
                                     </tr>
                                 </thead>
-                                <tbody id="addBOS">
+                                <tbody id="addStudentList">
                                 </tbody>
                             </table>
                             <div class="order-last add-user">
-                                <div class="ad-user col-lg-12" data-bs-target="#addBOSModal" data-bs-toggle="modal">
-                                    <img id="addBOSBtn" src="icons/plus-circle.svg" alt="">
+                                <div class="ad-user col-lg-12" data-bs-target="#addStuModal" data-bs-toggle="modal">
+                                    <img id="addStuBtn" src="icons/plus-circle.svg" alt="">
                                 </div>
                             </div>
 
-                            <div class="modal fade" id="addBOSModal" tabindex="-1" aria-labelledby="addBOSModalLabel"
+                            <div class="modal fade" id="addStuModal" tabindex="-1" aria-labelledby="addBOSModalLabel"
                                 aria-hidden="true" data-bs-backdrop="static">
-                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="addBOSModalLabel">Add BOS</h5>
+                                            <h5 class="modal-title" id="addStuModalLabel">Add Student</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -175,9 +174,10 @@
                                                         </div>
                                                         <div class="col-sm-4">
                                                             <div class="mb-3">
-                                                                <label for="code" class="form-label">Code</label>
-                                                                <input type="text" class="form-control form-animation"
-                                                                    id="code">
+                                                                <label for="regNo" class="form-label">Reg
+                                                                    No</label>
+                                                                <input type="number" class="form-control form-animation"
+                                                                    id="regNo">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-4">
@@ -189,26 +189,18 @@
                                                         </div>
                                                         <div class="col-sm-4">
                                                             <div class="form-outline mb-3">
-                                                                <label class="form-label" for="career">Career</label>
-                                                                <textarea class="form-control" id="career"
-                                                                    rows="1"></textarea>
+                                                                <label class="form-label" for="programBatch">Program
+                                                                    Batch</label>
+                                                                <input class="form-control form-animation"
+                                                                    id="programBatch">
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-4">
                                                             <div class="mb-3">
-                                                                <label for="schemeType" class="form-label">Scheme
-                                                                    Type</label>
+                                                                <label for="semester"
+                                                                    class="form-label">Semester</label>
                                                                 <input type="text" class="form-control form-animation"
-                                                                    id="schemeType">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-4 d-flex align-items-center">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    id="isOBEenabled">
-                                                                <label class="form-check-label" for="isOBEenabled">
-                                                                    isOBEenabled
-                                                                </label>
+                                                                    id="semester">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -241,7 +233,7 @@
 
     <script src="js/scrips.js"></script>
 
-    <script src="js/bos-table.js"></script>
+    <script src="js/student-list.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"

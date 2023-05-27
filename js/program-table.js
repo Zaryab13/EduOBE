@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const table = document.getElementById('addPEOs'); // Get reference to the table element
+    const table = document.getElementById('programList'); // Get reference to the table element
     const data = [
       // Array of objects with the data
       {
@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const cell = row.insertCell(); // Create a new cell
           const text = document.createTextNode(value); // Create a text node with the value
           cell.appendChild(text); // Append the text node to the cell
-        });
-  
+        });        
       // Create a cell for the additional HTML data on the right side
       const additionalDataCell = row.insertCell(); 
       // Create a new cell
@@ -77,8 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Create a container for the buttons
       const buttonContainer = document.createElement('div');
       buttonContainer.className =
-        'd-flex align-items-center justify-content-sm-evenly';
-  
+        'd-flex align-items-center justify-content-sm-evenly';        
+
+
       // Create the Edit button
       const editButton = document.createElement('button');
       editButton.classList.add('icon-button', 'edit-button');
@@ -166,8 +166,8 @@ document.addEventListener('DOMContentLoaded', () => {
     userNameTextElement[0].textContent = 'Admin';
   
     //Number of Total Departments
-    const numberOfTotalDepartments =
-      document.getElementsByClassName('total-departments');
-    numberOfTotalDepartments[0].textContent = data.length;
+    // const numberOfTotalDepartments =
+    //   document.getElementsByClassName('total-departments');
+    // numberOfTotalDepartments[0].textContent = data.length;
   });
   
