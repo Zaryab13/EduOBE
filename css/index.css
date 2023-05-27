@@ -1797,3 +1797,27 @@ nav {
   background-color: #44adce;
   transform: scale(1.1);
 }
+
+/* Tag Input PLO List */
+.tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 6px 8px;
+  border-radius: 30px;
+}
+
+.tag-container {
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.tag-remove {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* End */

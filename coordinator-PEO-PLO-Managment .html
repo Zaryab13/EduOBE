@@ -16,6 +16,21 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Bootstrap 5 CSS and DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+    <!-- Include DataTables and Bootstrap 5 JavaScript files -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Your HTML table code -->
+
+
+
 </head>
 
 <body class="preload">
@@ -23,7 +38,7 @@
     <div class="sidebar open">
         <div class="logo-details">
             <a href="">
-                <img src="img/Logo 2.png" alt="">
+                <img src="../img/Logo 2.png" alt="">
                 <span class="logo_name">edu obe</span>
             </a>
         </div>
@@ -45,10 +60,20 @@
         </div>
         <nav class="top-nav" id="header">
             <div class="nav-left">
+                <div class="logos">
+                    <img src="../img/uom logo.png" alt="">
+                    <img src="../img/uom se logo.png" alt="">
+                </div>
                 <div class="top-link-items">
                     <ul>
                         <li>
-                            <a href="#">About App </a>
+                            <a href="#">About</a>
+                            <i class="bx bxs-chevron-down arrow"></i>
+                            <ul class="about-sub-menu top-sub-menu">
+                                <li><a href="#">About University</a></li>
+                                <li><a href="#">About Department</a></li>
+                                <li><a href="#">About App</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -57,24 +82,87 @@
                 <div class="top-link-items">
                     <ul>
                         <li>
+                            <div class="icon-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff">
+                                    <path
+                                        d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                                </svg>
+                                <button type="button" class="notifdropBtn">
+                                    <i class="bx bxs-chevron-down arrow"></i>
+                                </button>
+                            </div>
+                            <ul class="notif-sub-menu" id="notifSubMenu">
+                                <div class="notif-header">
+                                    <div class="title">
+                                        <span>Notifications</span>
+                                    </div>
+                                    <div class="mrk-clr">
+                                        <span>Mark as read</span>
+                                        <span>Clear All</span>
+                                    </div>
+                                </div>
+                                <div class="notif-type">
+                                    <span>New</span>
+                                </div>
+                                <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">
+                                        Muhammad
+                                        Arsalan</a>
+                                    <div class="time-remain">
+                                        <img src="../icons/clock.svg" alt="">
+                                        <span>30 min</span>
+                                    </div>
+                                </li>
+                                <div class="notif-type">
+                                    <span>Earlier</span>
+                                </div>
+                                <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">Muhammad
+                                        Waqas</a>
+                                    <div class="time-remain">
+                                        <img src="../icons/clock.svg" alt="">
+                                        <span>30 min</span>
+                                    </div>
+                                </li>
+
+                                <li class="notification"><a href="#"><img src="../icons/profile.svg" alt="">Faraz
+                                        Khan</a>
+                                    <div class="time-remain">
+                                        <img src="../icons/clock.svg" alt="">
+                                        <span>30 min</span>
+                                    </div>
+                                </li>
+                                <div class="show-all-txt">
+                                    <span>Show All</span>
+                                </div>
+
+                            </ul>
+                        </li>
+                        <li>
                             <a id="user-name-link" href="#">
                                 Muhammad Arsalan
                             </a>
-                            <button type="button" class="profdropBtn">
+                            <button type="button" class="dropBtn">
                                 <i class="bx bxs-chevron-down arrow"></i>
                             </button>
                             <ul class="prof-sub-menu" id="profileSubMenu">
                                 <li>
                                     <a href="#">
-                                        <img src="icons/profile.svg" alt="">
+                                        <img src="../icons/profile.svg" alt="">
                                         <span class="user-name-text">
                                             Muhammad Arsalan
                                         </span>
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="adminProfile.html">
+                                        <img src="../icons/add-user.svg" alt="">
+                                        <span>
+                                            Profile
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="#">
-                                        <img src="icons/key.svg" alt="">
+                                        <img src="../icons/key.svg" alt="">
                                         <span>
                                             Reset Password
                                         </span>
@@ -82,7 +170,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="icons/logout.svg" alt="">
+                                        <img src="../icons/logout.svg" alt="">
                                         <span>
                                             Log Out
                                         </span>
@@ -97,12 +185,12 @@
 
         <!-- Home Content -->
         <div class="main container-fluid">
-            <h3 class="ms-3 my-4">Coordinator</h3>
+            <h3 class="ms-3 my-4">PEO & PLO's Management</h3>
             <div class="bread-crumbs d-flex">
                 <div aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item mx-3">
-                            <a href="coordinator.html"><img src="icons/home.svg" alt=""></a>
+                            <a href="coordinator.html"><img src="../icons/home.svg" alt=""></a>
                         </li>
                         <li class="breadcrumb-item"><a href="#">Coordinator</a></li>
                     </ol>
@@ -115,11 +203,11 @@
 
                     <div class="PEO-section row">
                         <div class="section-head">
-                            <h4 class="title">PEO List</h4>
+                            <h3 class="title">PEO List</h3>
                             <button class="csvBtn">Import CSV</button>
                         </div>
                         <div class="row peo-table">
-                            <table class="table table-striped">
+                            <table id="PEO-dataTable" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -127,6 +215,7 @@
                                         <th scope="col">Name</th>
                                         <th scope="col">Description</th>
                                         <th scope="col">Program Name</th>
+                                        <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody id="addPEOs">
@@ -134,13 +223,13 @@
                             </table>
                             <div class="order-last add-user">
                                 <div class="ad-user col-lg-12" data-bs-target="#addPEOModal" data-bs-toggle="modal">
-                                    <img id="addPEOBtn" src="icons/plus-circle.svg" alt="">
+                                    <img id="addPEOBtn" src="../icons/plus-circle.svg" alt="">
                                 </div>
                             </div>
 
                             <div class="modal fade" id="addPEOModal" tabindex="-1" aria-labelledby="addPEOModalLabel"
                                 aria-hidden="true" data-bs-backdrop="static">
-                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="addPEOModalLabel">Add PEO</h5>
@@ -151,41 +240,34 @@
                                             <div class="form-content-container">
                                                 <form class="me-1">
                                                     <div class="row mb-2">
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-6">
                                                             <div class="mb-3">
-                                                                <label for="serialNo" class="form-label">Serial</label>
-                                                                <input type="number" class="form-control form-animation"
-                                                                    id="serialNo">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <div class="mb-3">
-                                                                <label for="code" class="form-label">Code</label>
+                                                                <label for="PEO-code" class="form-label">Code</label>
                                                                 <input type="text" class="form-control form-animation"
-                                                                    id="code">
+                                                                    name="PEO-code">
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-6">
                                                             <div class="mb-3">
-                                                                <label for="name" class="form-label">Name</label>
+                                                                <label for="PEO-name" class="form-label">Name</label>
                                                                 <input type="text" class="form-control form-animation"
-                                                                    id="name">
+                                                                    name="PEO-name">
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-6">
+                                                            <div class="mb-3">
+                                                                <label for="PEO-program"
+                                                                    class="form-label">Program</label>
+                                                                <input type="text" class="form-control form-animation"
+                                                                    name="PEO-program">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
                                                             <div class="form-outline mb-3">
                                                                 <label class="form-label"
-                                                                    for="Description">Message</label>
-                                                                <textarea class="form-control" id="Description"
+                                                                    for="PEO-description">Description</label>
+                                                                <textarea class="form-control" name="PEO-description"
                                                                     rows="1"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <div class="mb-3">
-                                                                <label for="programName" class="form-label">Program
-                                                                    Name</label>
-                                                                <input type="text" class="form-control form-animation"
-                                                                    id="programName">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -195,7 +277,8 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary cancel-button"
                                                 data-bs-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-primary" id="updateButton">Add</button>
+                                            <button type="button" class="btn btn-primary"
+                                                id="PEO-modalAddUpdateBtn">Add</button>
                                             <div id="progressIndicator" class="text-center d-none">
                                                 <div class="spinner-border text-primary" role="status">
                                                     <span class="visually-hidden">Loading...</span>
@@ -207,23 +290,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="PLO-section row"></div>
+
                     </div>
+                    <hr style="width: 75%; margin: 30px 0;">
                     <div class="PLO-section row">
                         <div class="section-head">
-                            <h4 class="title">PLO List</h4>
+                            <h3 class="title">PLO List</h3>
                             <button class="csvBtn">Import CSV</button>
                         </div>
                         <div class="row plo-table">
-                            <table class="table table-striped">
+                            <table id="PLO-dataTable" class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Code</th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Description</th>
-                                        <th scope="col">Mapping PEO's Id</th>
                                         <th scope="col">KPI</th>
+                                        <th scope="col">PEOs ID</th>
+                                        <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody id="addPLOs">
@@ -231,7 +316,7 @@
                             </table>
                             <div class="order-last add-user">
                                 <div class="ad-user col-lg-12" data-bs-target="#addPLOModal" data-bs-toggle="modal">
-                                    <img id="addPLOBtn" src="icons/plus-circle.svg" alt="">
+                                    <img id="addPLOBtn" src="../icons/plus-circle.svg" alt="">
                                 </div>
                             </div>
 
@@ -248,48 +333,46 @@
                                             <div class="form-content-container">
                                                 <form class="me-1">
                                                     <div class="row mb-2">
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-6">
                                                             <div class="mb-3">
-                                                                <label for="serialNo" class="form-label">Serial</label>
-                                                                <input type="number" class="form-control form-animation"
-                                                                    id="serialNo">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <div class="mb-3">
-                                                                <label for="code" class="form-label">Code</label>
+                                                                <label for="PLO-code" class="form-label">Code</label>
                                                                 <input type="text" class="form-control form-animation"
-                                                                    id="code">
+                                                                    name="PLO-code">
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-6">
                                                             <div class="mb-3">
-                                                                <label for="name" class="form-label">Name</label>
+                                                                <label for="PLO-name" class="form-label">Name</label>
                                                                 <input type="text" class="form-control form-animation"
-                                                                    id="name">
+                                                                    name="PLO-name">
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-6">
                                                             <div class="form-outline mb-3">
                                                                 <label class="form-label"
-                                                                    for="Description">Description</label>
-                                                                <textarea class="form-control" id="Description"
+                                                                    for="PLO-description">Description</label>
+                                                                <textarea class="form-control" name="PLO-description"
                                                                     rows="1"></textarea>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
-                                                            <div class="mb-3">
-                                                                <label for="mappingPEO" class="form-label">Mapping PEO's
-                                                                    Id </label>
-                                                                <input type="text" class="form-control form-animation"
-                                                                    id="mappingPEO">
+                                                        <div
+                                                            class="col-sm-6 d-flex align-items-center justify-content-center">
+                                                            <div class="w-100 mt-3 position-relative">
+                                                                <select id="ploDropdown" class="form-select">
+                                                                    <option value="">PLO Mapping</option>
+                                                                    <option value="option1">PEO 1</option>
+                                                                    <option value="option2">PEO 2</option>
+                                                                    <option value="option3">PEO 3</option>
+                                                                    <option value="option4">PEO 4</option>
+                                                                </select>
+                                                                <div class="tag-container"></div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
-                                                            <div class="mb-3">
-                                                                <label for="kpi" class="form-label">KPI</label>
+                                                        <div class="col-sm-6">
+                                                            <div class="">
+                                                                <label for="PLO-kpi" class="form-label">KPI</label>
                                                                 <input type="text" class="form-control form-animation"
-                                                                    id="kpi">
+                                                                    name="PLO-kpi">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -299,7 +382,8 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary cancel-button"
                                                 data-bs-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-primary" id="updateButton">Add</button>
+                                            <button type="button" class="btn btn-primary"
+                                                id="PLO-modalAddUpdateBtn">Add</button>
                                             <div id="progressIndicator" class="text-center d-none">
                                                 <div class="spinner-border text-primary" role="status">
                                                     <span class="visually-hidden">Loading...</span>
@@ -312,18 +396,19 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
     </section>
+
+    <script src="js/ploTagsmapping.js">
+    </script>
 
 
     <script src="js/index.js"></script>
 
     <script src="js/scrips.js"></script>
 
-    <script src="js/peo-table.js"></script>
-    <script src="js/plo-table.js"></script>
+    <script src="js/scrips new 27-5.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"

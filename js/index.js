@@ -28,7 +28,7 @@ sidebarBtn.addEventListener("click", ()=>{
 
 
 const addUserEl = document.getElementById('addUserBtn');
-const overlay = document.querySelector('.dark-overlay')
+const overlay = document.querySelector('.dark-overlay');
 const popUpEl = document.getElementById('popUp');
 const cancelPopup = document.getElementById('cancelPopUp');
 const closePopupIcon = document.getElementById('closeIcon');
