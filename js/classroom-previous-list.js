@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const table = document.getElementById('batchList'); // Get reference to the table element
+    const table = document.getElementById('previousClassroomList'); // Get reference to the table element
     const data = [
       // Array of objects with the data
       {
@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '1',
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'kakakhan@uet.edu.pk',
         username: 'kakakhan12@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '2',
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '3',
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '4',
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
       {
         id: '5',
@@ -48,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deptName: 'Software Engineering',
         email: 'khalilullah@uom.edu.pk',
         username: 'khalilullah@se.uom',
-        regDate: '10-02-2023',
       },
     ];
   
@@ -69,6 +63,31 @@ document.addEventListener('DOMContentLoaded', () => {
           const text = document.createTextNode(value); // Create a text node with the value
           cell.appendChild(text); // Append the text node to the cell
         });
+  
+        
+        // Create a Cell for checkbox
+
+        const checkboxCell = row.insertCell();
+
+        const checkboxContainer = document.createElement('div');
+        checkboxContainer.classList.add('col-lg-2','d-flex','w-75','justify-content-center');
+        
+        const formCheckDiv = document.createElement('div');
+        formCheckDiv.classList.add('form-check');
+        
+        const isCheckedInput = document.createElement('input');
+        isCheckedInput.classList.add('form-check-input');
+        isCheckedInput.setAttribute('type', 'checkbox');
+        isCheckedInput.setAttribute('id', 'isOBEenabled');
+        
+        const isCheckedLabel = document.createElement('label');
+        isCheckedLabel.classList.add('form-check-label');
+        isCheckedLabel.setAttribute('for', 'isOBEenabled');
+        
+        checkboxCell.appendChild(checkboxContainer);
+        checkboxContainer.appendChild(formCheckDiv);
+        formCheckDiv.appendChild(isCheckedInput);
+        formCheckDiv.appendChild(isCheckedLabel);
   
       // Create a cell for the additional HTML data on the right side
       const additionalDataCell = row.insertCell(); 

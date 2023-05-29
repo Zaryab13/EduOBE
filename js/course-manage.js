@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const table = document.getElementById('batchList'); // Get reference to the table element
+    const table = document.getElementById('courseList'); // Get reference to the table element
     const data = [
       // Array of objects with the data
       {

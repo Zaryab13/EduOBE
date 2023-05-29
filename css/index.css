@@ -1774,14 +1774,16 @@ nav {
 
 .PEO-section .title,
 .PLO-section .title,
-.BOS-section .title {
+.BOS-section .title,
+.program-section .title {
   text-align: center;
   font-size: 30px;
   margin-top: 4rem;
 }
 .PEO-section .csvBtn,
 .PLO-section .csvBtn,
-.BOS-section .csvBtn {
+.BOS-section .csvBtn,
+.program-section .csvBtn {
   background-color: #67d3f5;
   float: right;
   padding: 8px 20px;
@@ -1792,7 +1794,8 @@ nav {
 }
 .PEO-section .csvBtn:hover,
 .PLO-section .csvBtn:hover,
-.BOS-section .csvBtn:hover {
+.BOS-section .csvBtn:hover,
+.program-section .csvBtn:hover {
   background-color: #44adce;
   transform: scale(1.1);
 }
