@@ -139,7 +139,26 @@ input:valid ~ label {
   font-size: 1em;
   font-weight: 600;
 }
+/* End of Log In Page */
 
+/* Start of Forgot Password Page */
+.forgot-pass-container {
+  width: 100vw;
+  height: 100vh;
+}
+.logo-container {
+  background: rgb(17, 16, 29);
+  background: linear-gradient(
+    0deg,
+    rgba(17, 16, 29, 1) 0%,
+    rgba(13, 110, 253, 1) 84%
+  );
+}
+.logo-container img {
+  width: 230px;
+}
+
+/* End of Forgot Password Page */
 /* Super Admin Dashboard */
 
 /* Sidebar */
@@ -1036,6 +1055,10 @@ nav {
   text-align: center;
   font-weight: 800;
 }
+
+.additional-heading {
+  font-size: 1.5rem;
+}
 .sub-heading {
   font-size: 1.5rem;
   margin: 2rem 0 2rem 9rem;
@@ -1146,15 +1169,18 @@ nav {
 /* icons Button with every row in the list of Departments */
 
 /* Css of the Table Buttons / Row */
-
+.table th {
+  text-align: center;
+}
 .table-row > td {
   padding: 1rem 0;
   vertical-align: middle;
-  text-align: left;
+  text-align: center;
 }
 .table-row > td:last-child {
   margin-right: 10px;
 }
+
 .icon-button {
   border: none;
   background-color: transparent;
@@ -1181,22 +1207,9 @@ nav {
   filter: invert(15%) sepia(92%) saturate(5849%) hue-rotate(359deg)
     brightness(98%) contrast(115%);
 }
-/* 
-.delete-button {
-  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
-    contrast(100%);
+.view-button img {
+  width: 25px;
 }
-
-.delete-button:hover {
-  filter: invert(78%) sepia(89%) saturate(1456%) hue-rotate(345deg)
-    brightness(111%) contrast(99%);
-}
-
-.delete-button:active {
-  filter: invert(17%) sepia(84%) saturate(7428%) hue-rotate(355deg)
-    brightness(107%) contrast(123%);
-} */
-
 /* End admin.HTML */
 
 /* Start UI-Uni Info Page */
@@ -1710,6 +1723,23 @@ nav {
   background-color: rgb(171, 36, 36);
 }
 
+/* Faculty Info Inside Modal */
+
+.faculty-info-modal p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.faculty-info-modal .img-container {
+  width: 150px;
+}
+.faculty-info-modal .img-container img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
 /* Add User Card Faculty Management */
 .add-user-card {
   height: 317px;
@@ -1775,18 +1805,25 @@ nav {
 .PEO-section .title,
 .PLO-section .title,
 .BOS-section .title,
-.program-section .title {
+.program-section .title,
+.CLO-section .title {
   text-align: center;
   font-size: 30px;
   margin-top: 4rem;
 }
+.marks-entry-section p {
+  margin: 1rem 0;
+  font-weight: 500;
+}
 .PEO-section .csvBtn,
 .PLO-section .csvBtn,
 .BOS-section .csvBtn,
-.program-section .csvBtn {
+.program-section .csvBtn,
+.CLO-section .csvBtn {
   background-color: #67d3f5;
   float: right;
   padding: 8px 20px;
+  margin: 0 20px 20px 0;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -1795,7 +1832,8 @@ nav {
 .PEO-section .csvBtn:hover,
 .PLO-section .csvBtn:hover,
 .BOS-section .csvBtn:hover,
-.program-section .csvBtn:hover {
+.program-section .csvBtn:hover,
+.CLO-section .csvBtn:hover {
   background-color: #44adce;
   transform: scale(1.1);
 }
@@ -1826,16 +1864,23 @@ nav {
 
 /* Start Batch Cards of =Student Batch List
  */
-.batch-cards {
+.batch-cards,
+.teacher-classroom-cards,
+.quiz-cards {
   background-color: #fff;
   border-radius: 10px;
   padding: 1rem;
+  margin-bottom: 10px;
 }
-.batch-cards a {
+.batch-cards a,
+.teacher-classroom-cards a,
+.quiz-cards a {
   text-decoration: none;
   color: #000;
 }
-.batch-card {
+.batch-card,
+.teacher-classroom-card,
+.marks-entry-card {
   background-color: #f2f2f2;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -1846,8 +1891,10 @@ nav {
   cursor: pointer;
 }
 
-.batch-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.batch-card:hover,
+.teacher-classroom-card:hover,
+.marks-entry-card:hover {
+  box-shadow: 1px 1px 11px 10px rgba(0, 0, 0, 0.2);
 }
 
 .batch-card h3 {
@@ -1864,4 +1911,68 @@ nav {
 .no-students span {
   font-size: 60px;
   font-weight: 900;
+}
+
+/* Teacher Classroom Cards Separate Code */
+
+.teacher-classroom-card,
+.marks-entry-card {
+  padding: 0rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.teacher-classroom-card .card-head {
+  background-color: #0071e2;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.teacher-classroom-card .card-head h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.teacher-classroom-card .card-body,
+.marks-entry-card .card-body {
+  padding: 1rem 0;
+}
+.teacher-classroom-card .card-body p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.teacher-classroom-card .card-body span {
+  font-size: 4rem;
+}
+
+.teacher-classroom-card .card-footer {
+  background-color: #0071e2;
+  padding: 0.5rem 0;
+}
+.teacher-classroom-card .card-footer p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* Classroom MArks Entry Card */
+
+.marks-entry-card .card-head {
+  background-color: #fff;
+  box-shadow: none;
+  height: 2.5rem;
+}
+
+.marks-entry-card .card-body {
+  background-color: #0071e2;
+}
+
+.marks-entry-card .card-body p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.marks-entry-card .card-footer {
+  height: 2.5rem;
+  background-color: #fff;
 }

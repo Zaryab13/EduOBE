@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Box-Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+
+<body class="preload">
+
+    <div class="sidebar open">
+        <div class="logo-details">
+            <a href="index.html">
+                <img src="../img/Logo 2.png" alt="">
+                <span class="logo_name">edu obe</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <div class="iocn-link">
+                    <a href="teacher-classrooms.html">
+                        <img src="../icons/user.png" alt="">
+                        <span class="link_name">Classroom</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="individual-teacher-classroom-clo-manage.html">CLO Management</a>
+                    </li>
+                    <li>
+                        <a href="teacher-classroom-marks-entry.html">Marks Entry</a>
+                    </li>
+                    <li>
+                        <a href="">Mapping CLO with <br>Questions</a>
+                    </li>
+                    <li>
+                        <a href="">CLO Assesment</a>
+                    </li>
+                    <li>
+                        <a href="">CQI</a>
+                    </li>
+                    <li>
+                        <a href="">Re-Assignment</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <nav class="top-nav" id="header">
+            <div class="nav-left">
+                <div class="top-link-items">
+                    <ul>
+                        <li>
+                            <a href="#">About App </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="top-link-items">
+                    <ul>
+                        <li>
+                            <a id="user-name-link" href="#">
+                                Muhammad Arsalan
+                            </a>
+                            <button type="button" class="profdropBtn">
+                                <i class="bx bxs-chevron-down arrow"></i>
+                            </button>
+                            <ul class="prof-sub-menu" id="profileSubMenu">
+                                <li>
+                                    <a href="#">
+                                        <img src="../icons/profile.svg" alt="">
+                                        <span class="user-name-text">
+                                            Muhammad Arsalan
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../icons/key.svg" alt="">
+                                        <span>
+                                            Reset Password
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../icons/logout.svg" alt="">
+                                        <span>
+                                            Log Out
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Content -->
+        <div class="main container-fluid">
+            <h3 class="ms-3 my-4">Classroom</h3>
+            <div class="bread-crumbs d-flex">
+                <div aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item mx-3">
+                            <a href="index.html"><img src="../icons/home.svg" alt=""></a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#">Teacher</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row justify-content-center pb-4">
+                    <h3 class="section-heading">Marks Entry</h3>
+
+                    <div class="row justify-content-center quiz-cards">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <a href="teacher-classroom-marks-entry-individualActivty.html">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Quiz 1</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <a href="">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Quiz 2</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <a href="">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Quiz 3</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center quiz-cards">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <a href="">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Assignment 1</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <a href="">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Assignment 2</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                            <a href="">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Assignment 3</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center quiz-cards">
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>MID</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a href="">
+                                <div class="marks-entry-card">
+                                    <div class="card-head">
+                                    </div>
+                                    <div class="card-body">
+                                        <p>FINAL</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="../js/index.js"></script>
+
+    <script src="../js/scrips.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

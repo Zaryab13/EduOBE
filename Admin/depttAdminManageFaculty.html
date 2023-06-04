@@ -31,19 +31,6 @@
             </a>
         </div>
         <ul class="nav-links">
-            <!-- <li>
-                <div class="iocn-link">
-                    <a href="index.html">
-                        <img src="../icons/user.png" alt="">
-                         <i class="bi bi-person-gear"></i>
-             <i class='bx bx-grid-alt'></i>
-            <span class="link_name">Admin</span>
-            </a>
-            <ul class="sub-menu">
-                <li><a class="link_name" href="index.html">Admin</a></li>
-            </ul>
-    </div>
-    </li> -->
             <li>
                 <div class="iocn-link">
                     <a href="#">
@@ -57,7 +44,7 @@
                         <a href="ui-uni-info.html">Uni & Deptt <br> Management</a>
                     </li>
                     <li>
-                        <a href="ui-faculty-manage.html">Faculty Management</a>
+                        <a href="depttAdminManageFaculty.html">Faculty Management</a>
                     </li>
                 </ul>
             </li>
@@ -215,6 +202,179 @@
                             class="add-user-card d-flex align-items-center justify-content-center"
                             data-bs-toggle="modal" data-bs-target="#addUpdateFaculty">
                             <img src="../icons/plus.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="ViewFacultyInfoModal" tabindex="-1"
+                        aria-labelledby="ViewFacultyInfoModalLabel" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ViewFacultyInfoModalLabel">Faculty Data</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-content-container">
+                                        <div class="row faculty-info-modal">
+                                            <div class="col-12 mb-4 d-flex justify-content-center align-items-center">
+                                                <div class="mb-4 img-container">
+                                                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5>Employee Id</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>791</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Name:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>Arsalan Khan</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Gender:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>Male</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Designation:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>Professor</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Highest Degree:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Faculty Appointment-Type:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">isPHD:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Role:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">DOB:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Email:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Phone:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Address:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Experience:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">CNIC:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Joining Date:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Ending Date:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Username:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-start">
+                                                <div class="col-6">
+                                                    <h5 class="me-3">Password:</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p>PHD</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary cancel-button"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

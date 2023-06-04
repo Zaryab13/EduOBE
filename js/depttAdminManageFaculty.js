@@ -55,6 +55,56 @@ document.addEventListener('DOMContentLoaded', () => {
       pictureURL:
         'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
     },
+    {
+      id: 3,
+      name: 'Qari Saib',
+      gender: 'Male',
+      designation: 'Associate Professor',
+      role: 'HOD',
+      highestDegree: 'post Doctorate',
+      pictureURL:
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+    },
+    {
+      id: 3,
+      name: 'Qari Saib',
+      gender: 'Male',
+      designation: 'Associate Professor',
+      role: 'HOD',
+      highestDegree: 'post Doctorate',
+      pictureURL:
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+    },
+    {
+      id: 3,
+      name: 'Qari Saib',
+      gender: 'Male',
+      designation: 'Associate Professor',
+      role: 'HOD',
+      highestDegree: 'post Doctorate',
+      pictureURL:
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+    },
+    {
+      id: 3,
+      name: 'Qari Saib',
+      gender: 'Male',
+      designation: 'Associate Professor',
+      role: 'HOD',
+      highestDegree: 'post Doctorate',
+      pictureURL:
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+    },
+    {
+      id: 3,
+      name: 'Qari Saib',
+      gender: 'Male',
+      designation: 'Associate Professor',
+      role: 'HOD',
+      highestDegree: 'post Doctorate',
+      pictureURL:
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+    },
   ];
 
   //  ==============================================================
@@ -130,8 +180,20 @@ document.addEventListener('DOMContentLoaded', () => {
       // You can access the specific faculty item using facultyData[i]
       console.log('Delete button clicked for:', facultyData[i]);
     });
-
+    
     cardsList.appendChild(card);
+
+    const ViewInfo = document.getElementById('ViewProfileDetails');
+
+
+    ViewInfo.addEventListener('click', () => {
+
+      console.log('Image CLicke');
+      card.setAttribute('data-bs-toggle','modal');
+      card.setAttribute('data-bs-target','#ViewFacultyInfoModal');
+
+
+    });
   }
   // Get the button that opens the modal
   var btns = document.querySelectorAll('.fcEditBtn');

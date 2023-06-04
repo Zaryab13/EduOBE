@@ -1,65 +1,74 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const table = document.getElementById('addBOS'); // Get reference to the table element
-    const data = [
+    const table = document.getElementById('addBOSextended'); // Get reference to the table element
+    const data =
       // Array of objects with the data
-      {
-        id: '1',
-        universityName: 'University of Malakand',
-        deptName: 'Software Engineering',
-        email: 'khalilullah@uom.edu.pk',
-        username: 'khalilullah@se.uom',
-      },
-      {
-        id: '1',
-        universityName: 'University of Mardan',
-        deptName: 'Software Engineering',
-        email: 'kakakhan@uet.edu.pk',
-        username: 'kakakhan12@se.uom',
-      },
-      {
-        id: '2',
-        universityName: 'University of Malakand',
-        deptName: 'Software Engineering',
-        email: 'khalilullah@uom.edu.pk',
-        username: 'khalilullah@se.uom',
-      },
-      {
-        id: '3',
-        universityName: 'University of Malakand',
-        deptName: 'Software Engineering',
-        email: 'khalilullah@uom.edu.pk',
-        username: 'khalilullah@se.uom',
-      },
-      {
-        id: '4',
-        universityName: 'University of Malakand',
-        deptName: 'Software Engineering',
-        email: 'khalilullah@uom.edu.pk',
-        username: 'khalilullah@se.uom',
-      },
-      {
-        id: '5',
-        universityName: 'University of Malakand',
-        deptName: 'Software Engineering',
-        email: 'khalilullah@uom.edu.pk',
-        username: 'khalilullah@se.uom',
-      },
-    ];
+      [
+        {
+          id: '1',
+          semester: 'Spring 2023',
+          courseId: 'CSE101',
+          courseName: 'Introduction to Computer Science',
+          courseType: 'Core',
+          credits: 3,
+          department: 'Computer Science',
+          term: 'Regular'
+        },
+        {
+          id: '2',
+          semester: 'Fall 2023',
+          courseId: 'MAT202',
+          courseName: 'Linear Algebra',
+          courseType: 'Elective',
+          credits: 4,
+          department: 'Mathematics',
+          term: 'Regular'
+        },
+        {
+          id: '3',
+          semester: 'Spring 2023',
+          courseId: 'ENG101',
+          courseName: 'English Composition',
+          courseType: 'Core',
+          credits: 3,
+          department: 'English',
+          term: 'Regular'
+        },
+        {
+          id: '4',
+          semester: 'Fall 2023',
+          courseId: 'PHY201',
+          courseName: 'Physics I',
+          courseType: 'Core',
+          credits: 4,
+          department: 'Physics',
+          term: 'Regular'
+        },
+        {
+          id: '5',
+          semester: 'Spring 2023',
+          courseId: 'BIO101',
+          courseName: 'Introduction to Biology',
+          courseType: 'Core',
+          credits: 3,
+          department: 'Biology',
+          term: 'Regular'
+        }
+      ];
   
     // Iterate through the array of objects and populate the table
+    
     data.forEach((object, index) => {
 
       // Iterate through each property of the object and create cells with the values
       const row = table.insertRow(); // Create a new row
       row.classList.add('table-row');
-    
+
       // Create a new cell
       const cell = row.insertCell(); 
-    
+
       // Create a text node with the value
       const text = document.createTextNode(index + 1); 
       cell.appendChild(text); // Append the text node to the cell
-      
       Object.values(object)
         .slice(1)
         .forEach((value) => {
@@ -67,80 +76,54 @@ document.addEventListener('DOMContentLoaded', () => {
           const text = document.createTextNode(value); // Create a text node with the value
           cell.appendChild(text); // Append the text node to the cell
         });
-      
-      // Create a Cell for checkbox
-      const checkboxCell = row.insertCell();
-      const checkboxContainer = document.createElement('div');
-      checkboxContainer.classList.add('col-lg-2', 'd-flex', 'w-100', 'justify-content-center');
-
-
-      const formCheckDiv = document.createElement('div');
-      formCheckDiv.classList.add('form-check');
-
-
-      const isCheckedInput = document.createElement('input');
-      isCheckedInput.classList.add('form-check-input');
-      isCheckedInput.setAttribute('type', 'checkbox');
-      isCheckedInput.setAttribute('id', 'isOBEenabled');
-
-
-      const isCheckedLabel = document.createElement('label');
-      isCheckedLabel.classList.add('form-check-label');
-      isCheckedLabel.setAttribute('for', 'isOBEenabled');
-      checkboxCell.appendChild(checkboxContainer);
-      checkboxContainer.appendChild(formCheckDiv);
-      formCheckDiv.appendChild(isCheckedInput);
-      formCheckDiv.appendChild(isCheckedLabel);
-      
+        
       // Create a cell for the additional HTML data on the right side
       const additionalDataCell = row.insertCell(); 
-      additionalDataCell.className = 'right col-2'; // Set the cell's class name
-    
+      // Create a new cell
+      additionalDataCell.className = 'right col-2'; 
+      // Set the cell's class name
+  
       // Create a container for the buttons
       const buttonContainer = document.createElement('div');
-      buttonContainer.className = 'd-flex align-items-center justify-content-sm-evenly';
-    
+      buttonContainer.className =
+        'd-flex align-items-center justify-content-sm-evenly';        
+
+
       // Create the Edit button
       const editButton = document.createElement('button');
       editButton.classList.add('icon-button', 'edit-button');
       editButton.innerHTML = '<img src="icons/edit.svg" alt="Edit">';
-    
+  
       // Add event listener to the Edit button
       editButton.addEventListener('click', () => {
-        handleEditButtonClick(index); // Pass the index of the row to the event handler
+        // Pass the index of the row to the event handler
+        handleEditButtonClick(index); 
       });
-    
+  
       buttonContainer.appendChild(editButton);
-    
+  
       // Create the Delete button
       const deleteButton = document.createElement('button');
       deleteButton.className = 'icon-button delete-button ';
       deleteButton.innerHTML = '<img src="icons/trash.svg" alt="Delete">';
-    
+  
       // Add event listener to the Delete button
       deleteButton.addEventListener('click', () => {
         handleDeleteButtonClick(index); // Pass the index of the row to the event handler
       });
-    
+  
       buttonContainer.appendChild(deleteButton);
-    
-      // Create the View button
-      const viewButton = document.createElement('button');
-      viewButton.className = 'icon-button view-button';
-      viewButton.innerHTML = '<img src="icons/view.png" alt="View">';
-    
-      // Add event listener to the View button
-      viewButton.addEventListener('click', () => {
-        handleViewButtonClick(index); // Pass the index of the row to the event handler
-      });
-    
-      buttonContainer.appendChild(viewButton);
-    
+  
       additionalDataCell.appendChild(buttonContainer);
     });
-
   
     // Event handler for the Edit button click
+    // function handleEditButtonClick(rowIndex) {
+    //   // Access the data of the clicked row using the rowIndex
+    //   const rowData = data[rowIndex];
+    //   console.log('Edit button clicked for row:', rowIndex);
+    //   console.log('Row data:', rowData);
+    // }
   
     function handleEditButtonClick(rowIndex) {
       const rowData = data[rowIndex];
@@ -163,7 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
       overlay.style.display = 'block';
       modalContainerEl.style.display = "block";
       
-
+      
+    
       // Populate the input fields with the row data
       document.getElementById('university-name-input').value = rowData.universityName;
       document.getElementById('dept-name-input').value = rowData.deptName;
@@ -179,6 +163,10 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Delete button clicked for row:', rowIndex);
       console.log('Row data:', rowData);
     }
+  
+  
+    // Event handler for the Delete button click
+  // Event handler for the Delete button click
     
     // Dynimaically adding 'admin' as logedIn user.
     const userNameLinkElement = document.getElementById('user-name-link');
@@ -192,14 +180,4 @@ document.addEventListener('DOMContentLoaded', () => {
     //   document.getElementsByClassName('total-departments');
     // numberOfTotalDepartments[0].textContent = data.length;
   });
-
-  function handleViewButtonClick(rowIndex) {
-    // Redirect to the new page with the row data
-    const rowData = data[rowIndex];
-    console.log('View button clicked for row:', rowIndex);
-      console.log('Row data:', rowData);
-
-    // const rowData = data[index];
-    // const queryString = new URLSearchParams(rowData).toString();
-    // window.location.href = 'view_page.html?' + queryString;
-  }
+  

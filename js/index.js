@@ -26,6 +26,7 @@ sidebarBtn.addEventListener("click", ()=>{
   sidebar.classList.toggle("close");
 });
 
+// Modal Code Admin
 
 const addUserEl = document.getElementById('addUserBtn');
 const overlay = document.querySelector('.dark-overlay');
