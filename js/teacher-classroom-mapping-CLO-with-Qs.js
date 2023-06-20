@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const addMarksEntrybutton = document.getElementById('addMarksEntryBtn');
-    const addMarksEntryModalTitle = document.getElementById('addMarksEntryModalLabel');
-    const MarksEntrymodalAddUpdateBtn = document.getElementById('MarksEntry-modalAddUpdateBtn');
+    const addQAMFbutton = document.getElementById('addQuizzesBtn');
+    const addQAMFTitle = document.getElementById('addQAMFLabel');
+    const QAMFmodalAddUpdateBtn = document.getElementById('QAMF-modalAddUpdateBtn');
   
-    addMarksEntrybutton.addEventListener('click', () => {
-      addMarksEntryModalTitle.innerHTML = 'Add Marks';
-      MarksEntrymodalAddUpdateBtn.innerHTML = 'Add';
+    addQAMFbutton.addEventListener('click', () => {
+        addQAMFTitle.innerHTML = 'Add Marks';
+        QAMFmodalAddUpdateBtn.innerHTML = 'Add';
     });
   
-    const tableMarksEntry = $('#MarksEntry-dataTable').DataTable({
+    const tableMarksEntry = $('#Quiz-list-dataTable').DataTable({
       paging: true,
       lengthMenu: [5, 10, 25, 50],
       searching: true,
@@ -47,21 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     // Add event listener for edit button in MarksEntry DataTable
-    $('#MarksEntry-dataTable tbody').on('click', 'button.edit-button', function () {
+    $('#Quiz-list-dataTable tbody').on('click', 'button.edit-button', function () {
       let rowData = tableMarksEntry.row($(this).closest('tr')).data();
-      console.log('MarksEntry-Table : ');
+      console.log('QAMF-Table : ');
       console.log(rowData);
   
       // updating inner HTML content of modal title and action button.
-      addMarksEntryModalTitle.innerHTML = 'Update Marks';
-      MarksEntrymodalAddUpdateBtn.innerHTML = 'Update';
+      addQAMFTitle.innerHTML = 'Update Marks';
+      QAMFmodalAddUpdateBtn.innerHTML = 'Update';
   
-      // Open addMarksEntryModal
-      $('#addMarksEntryModal').modal('show');
+      // Open addQAMFModal
+      $('#addQAMFModal').modal('show');
   
       // Use the rowData to populate the fields in the modal
-      $('#addMarksEntryModal input[name="MarksEntry-code"]').val(rowData.Code);
-      $('#addMarksEntryModal input[name="MarksEntry-name"]').val(rowData.Name);
+      $('#addQAMFModal input[name="MarksEntry-code"]').val(rowData.Code);
+      $('#addQAMFModal input[name="MarksEntry-name"]').val(rowData.Name);
       // Repeat for other fields
     });
   
