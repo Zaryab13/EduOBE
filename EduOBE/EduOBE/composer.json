@@ -1,0 +1,15 @@
+{
+    "name": "muhammadwaqas/edu-obe",
+    "description": "A outcome based Education System for Department of Software Engineering, University of Malakand",
+    "type": "project",
+    "license": "GPT",
+    "authors": [
+        {
+            "name": "Muhammad Waqas"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    }
+}
